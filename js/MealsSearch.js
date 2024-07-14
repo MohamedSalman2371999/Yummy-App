@@ -57,9 +57,10 @@ document.getElementById("searchByFirstletter").addEventListener('input',function
         getMealsByFirstLetter('m')
     }
 })
+loader.classList.remove('d-none')
 getMealsByName("")
 async function getMealsByName(N_Meals) {
-    // loader.classList.remove('d-none')
+    loader.classList.remove('d-none')
     const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${N_Meals}`);
     const data = await apiResponse.json();
     const meals=data.meals
@@ -75,7 +76,7 @@ async function getMealsByName(N_Meals) {
 
  }
  async function getMealsByFirstLetter(L_of_Meals) {
-    // loader.classList.remove('d-none')
+    loader.classList.remove('d-none')
     const apiResponse = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${L_of_Meals}`);
     const data = await apiResponse.json();
     const meals=data.meals
