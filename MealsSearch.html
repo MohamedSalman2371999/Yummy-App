@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+       rel="shortcut icon"
+       href="images/restaurant.png"
+       type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Search For Meals</title>
+</head>
+<body class="bg-gradient">
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0 me-5">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li  class="list-of-links py-2 position-relative cursor-pointer">Search</li>
+                    <li  class="list-of-links py-2 position-relative cursor-pointer">Categories</li>
+                    <li  class="list-of-links py-2 position-relative cursor-pointer">Area</li>
+                    <li  class="list-of-links py-2 position-relative cursor-pointer">Ingredients</li>
+                    <li  class="list-of-links py-2 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 text-black">
+            <img class="logo" src="images/waiter.gif" alt="" srcset="">
+            <img class="menu-bar" src="images/menu-bar.png" alt="" srcset="">
+            <img class="menu-exit d-none" src="images/cross.png" alt="" srcset="">
+    
+            <div>
+                <img src="images/world-wide-web.png" class="d-block m-auto w-size pb-1" alt="">
+                <img src="images/share.png" class="d-block m-auto w-25 cursor-pointer" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="container padding-container">
+        <div class="row mb-4 gy-3">
+            <div class="col-md-6">
+                <input id="searchByName" class="form-control bg-transparent" placeholder="Search By Name" type="search">
+            </div>
+            <div class="col-md-6">
+                <input id="searchByFirstletter" class="form-control bg-transparent" maxlength="1" placeholder="Search By First letter" type="search">
+            </div>
+        </div>
+        <div id="mealsFromSearch" class="row gy-3">
+
+    </div>
+    <div class="loading d-none">
+        <span class="loader"></span>
+      </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/MealsSearch.js"></script>
+</body>
+</html>
