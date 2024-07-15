@@ -83,7 +83,7 @@ function displaygetIngredients(meals) {
         mealsBox +=`
         <div class="col-md-3">
             <div id="${meals[i].strIngredient}" class="IngredientOfRecipes cursor-pointer">
-                <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+                <img class="w-75" src="https://www.themealdb.com/images/ingredients/${meals[i].strIngredient}.png" alt="">
                 <h3>${meals[i].strIngredient}</h3>
                 <p>${meals[i].strDescription.split(" ").slice(0,20).join(" ")}}</p>
             </div>
